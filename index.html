@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
+	<link rel="short curt icon" href="">
+	<link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Transação</title>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Controle de despesas</h1>
+		</header>
+		<section>
+			<div class="painel">
+				<div class="card saldo">
+					<div class="titulo">
+						<h4>Saldo</h4>
+					</div>
+					<div class="valor">
+						<span>R$ 2.500</span>
+					</div>
+				</div>
+				<div class="card receita">
+					<div class="titulo">
+						<h4>Receita</h4>
+					</div>
+					<div class="valor">
+						<span>R$ 2.500</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="titulo">
+						<h4>Gasto</h4>
+					</div>
+					<div class="valor">
+						<span>R$ 2.500</span>
+					</div>
+				</div>
+
+			</div><!-- fim div painel-->
+		</section>
+		<section id="listagem">
+			<h1>Transações</h1>
+			<div class="card-lista">
+				<div class="desc">
+					<span>Gasolina</span>
+				</div>
+				<div class="despesa">
+					<span> + R$ 53.00 </span>
+				</div>
+				<div class="excluir">
+					<span>x</span>
+				</div>
+			</div>
+		</section><!--listagem-->
+		<section id="formulario">
+			<div class="divisao">
+				<h3>Cadastre uma transação</h3>
+			</div>
+			<div class="input">
+				<form>
+					<input type="text" name="desc" placeholder="Descrição da despesa">
+					<input type="number" name="valor" placeholder="valor">
+				</form>
+				<div class="sinal">+</div>
+			</div>
+			<button class="btn-cadastrar" type="submit">Cadastrar</button>
+			
+		</section>
+	</div>
+
+
+</body>
+</html>
