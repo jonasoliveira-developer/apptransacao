@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="short curt icon" href="">
 	<link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
@@ -12,69 +12,40 @@
 	<title>Transação</title>
 </head>
 <body>
-	<div id="container">
-		<header>
-			<h1>Controle de despesas</h1>
-		</header>
-		<section>
-			<div class="painel">
-				<div class="card saldo">
-					<div class="titulo">
-						<h4>Saldo</h4>
-					</div>
-					<div class="valor">
-						<span>R$ 2.500</span>
-					</div>
-				</div>
-				<div class="card receita">
-					<div class="titulo">
-						<h4>Receita</h4>
-					</div>
-					<div class="valor">
-						<span>R$ 2.500</span>
-					</div>
-				</div>
-				<div class="card">
-					<div class="titulo">
-						<h4>Gasto</h4>
-					</div>
-					<div class="valor">
-						<span>R$ 2.500</span>
-					</div>
-				</div>
-
-			</div><!-- fim div painel-->
-		</section>
+	
+	<div id="container">	
+		<h1>Dev-Tarefas</h1>
+		<section id="painel">
+			<div class="saldo card">
+				<h2>Saldo</h2>
+				<span>R$ 2.000</span>
+			</div>
+			<div class="receita card">
+				<h2>Receita</h2>
+				<span>R$ 2.000</span>
+			</div>
+			<div class="despesa card">
+				<h2>Despesas</h2>
+				<span>R$ 2.000</span>
+			</div>
+		</section><!--FIM PAINEL-->
 		<section id="listagem">
-			<h1>Transações</h1>
-			<div class="card-lista">
-				<div class="desc">
-					<span>Gasolina</span>
-				</div>
-				<div class="despesa">
-					<span> + R$ 53.00 </span>
-				</div>
-				<div class="excluir">
-					<span>x</span>
-				</div>
-			</div>
-		</section><!--listagem-->
-		<section id="formulario">
-			<div class="divisao">
-				<h3>Cadastre uma transação</h3>
-			</div>
-			<div class="input">
-				<form>
-					<input type="text" name="desc" placeholder="Descrição da despesa">
-					<input type="number" name="valor" placeholder="valor">
-				</form>
-				<div class="sinal">+</div>
-			</div>
-			<button class="btn-cadastrar" type="submit">Cadastrar</button>
-			
-		</section>
+			<h2>Tarefas</h2>
+		   <ul>
+			   <li><span>Gasolina do carro etc </span> <span>- R$ 53.00</span><button>x</button></li>
+			    <li><span>Faculdade</span> <span>- R$ 53.00</span><button>x</button></li>
+			    <li><span>Salario</span> <span>+ R$ 53.00</span><button>x</button></li>
+		   </ul>
+	    </section>
+	    <form>
+	    	<h3>Castre uma transação</h3>
+	    	<input type="text" name="transacao" placeholder="digite o tipo">
+	    	<input type="number" name="valor" placeholder="digite(-) para negativos">
+	    </form>
+	    <button id="enviar" type="submit">Cadastrar</button>
 	</div>
+	
 
-
+	<script src="js/app.js"></script>
 </body>
 </html>
