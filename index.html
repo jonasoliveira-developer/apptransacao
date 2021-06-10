@@ -18,31 +18,30 @@
 		<section id="painel">
 			<div class="saldo card">
 				<h2>Saldo</h2>
-				<span>R$ 2.000</span>
+				<span>0.00</span>
 			</div>
 			<div class="receita card">
 				<h2>Receita</h2>
-				<span>R$ 2.000</span>
+				<span>0.00</span>
 			</div>
 			<div class="despesa card">
 				<h2>Despesas</h2>
-				<span>R$ 2.000</span>
+				<span>0.00</span>
 			</div>
 		</section><!--FIM PAINEL-->
 		<section id="listagem">
 			<h2>Tarefas</h2>
-		   <ul>
-			   <li><span>Gasolina do carro etc </span> <span>- R$ 53.00</span><button>x</button></li>
-			    <li><span>Faculdade</span> <span>- R$ 53.00</span><button>x</button></li>
-			    <li><span>Salario</span> <span>+ R$ 53.00</span><button>x</button></li>
+		   <ul id="ul">
+			
 		   </ul>
 	    </section>
-	    <form>
-	    	<h3>Castre uma transação</h3>
-	    	<input type="text" name="transacao" placeholder="digite o tipo">
-	    	<input type="number" name="valor" placeholder="digite(-) para negativos">
+	    <hr>
+	    <form id="form">
+	    	<h3>Casdastre uma transação</h3>
+	    	<input type="text" name="transacao" id="descricao" placeholder="digite o tipo">
+	    	<input type="number" id="valorInput" placeholder="digite(-) para negativos">
+	    	 <button id="enviar">Cadastrar</button>
 	    </form>
-	    <button id="enviar" type="submit">Cadastrar</button>
 	</div>
 	
 

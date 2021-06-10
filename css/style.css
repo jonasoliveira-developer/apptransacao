@@ -19,7 +19,7 @@ body {
 	margin-top: 30px;
 	padding: 20px;
 	max-width:600px;
-	background-color: #DEDDDD;
+	background-color: #BEBBBB;
 	border-radius: 5px;
 }
 #container h1{
@@ -60,7 +60,7 @@ body {
 }
 .card span{
 	font-size:1.5rem;
-	margin-left:2.5rem;
+	margin-left:0.5rem;
 }
 /*LISTANDO INFORMAÇÕES*/
 #listagem h2 {
@@ -82,9 +82,9 @@ body {
 	box-shadow: 0.2rem 0.1rem 0.1rem rgba(0,0,0,0.5);
 }
 #listagem li span{
-	
 	width: 30%;
 	font-size: 1.5rem;
+	text-align: justify;
 }
 #listagem li span:first-child{
 	width: 50%;
@@ -101,8 +101,11 @@ body {
 	color: #FFF;
 }
 /*ESTILIZANDO OS INPUTS DE ENVIO*/
+hr{
+	margin-top: 3rem;
+}
 form h3{
-	margin-top: 1rem;
+	margin-top: 2rem;
 	font-size: 1.4rem;
 	font-style: 'Roboto';
 }
@@ -113,6 +116,7 @@ input[type=text]{
 	border: none;
 	outline: none;
 	font-size: 1rem;
+	cursor: pointer;
 
 }
 input[type=number]{
@@ -121,8 +125,14 @@ input[type=number]{
 	border: none;
 	outline: none;
 	font-size: 1rem;
-	
+	cursor: pointer;
+
 }
+input[type=number]::placeholder{
+	color:red;
+}
+
+
 #enviar{
 	width: 100%;
 	border: none;
@@ -130,9 +140,24 @@ input[type=number]{
 	margin-top: 10px;
 	font-size: 1.5rem;
 	border-radius: 3px;
-	background-color:#6F85FD;
+	background-color:#72299F;
 	color: #FFF;
 	cursor: pointer;
+}
+
+@media(max-width: 650px) {
+	#container{
+		width: 100%;
+	}
+	#painel {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.card{
+		width: 100%;
+		text-align: center;
+	}
 }
 
 
