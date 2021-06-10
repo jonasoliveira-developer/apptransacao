@@ -1,3 +1,3 @@
-Hoje eu fiz or arquivos HTML e CSS no sistema!!
-Hoje senti a necessidade de melhorar estruturando pensando nas funcionalidades javascript
-hoje eu acrescentei as funcionalidades com javascript persistindo as informações no local storage
+Esse é um simples sistema de controle financeiro.NO javascript tilizei os conceitos estudados sobre MAP,FILTER,REDUCE para fazer as funcionalidades.Também ultilizei com CSS media querys para ajustar a responsividade. Esse projeto foi desafiador para mim pois fiz desde o protótipo no FIGMA ao JAVASCRIPT.
+Foi a primeira vez que tentei fazer um layout e sinto que preciso melhorar,acrescentei o figma as minha stack 
+de estudo.
