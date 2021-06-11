@@ -17,8 +17,9 @@ let excluirTransacao = (ID) => {
 	transacoes = transacoes.filter((transacao)=>{
 		return transacao.id != ID
 
-})
 
+})
+	atualizarStorage()
 	inicializar()
 
 }
@@ -45,6 +46,7 @@ let excluirTransacao = (ID) => {
  let atualizarPainel = () => {
  	let valorTransacao =	transacoes.map((item) =>{
  		return item.valor
+ 		
  		
  	})
 
@@ -90,6 +92,10 @@ let inicializar = () => {
 } 
 inicializar()
 
+let atualizarStorage = () => {
+	localStorage.setItem('transacoes', JSON.stringify(transacoes))
+}
+
 
 // CRIANDO UM IDENTIFICADOR ALEATORIO
 const gerarId = () => {
@@ -102,6 +108,8 @@ const gerarId = () => {
  	let descricao = document.querySelector('#descricao').value
  	let valor = document.querySelector('#valorInput').value
 
+ 		
+
  	if(descricao == '' || valor == ''){
  		alert('Preencha todos os campos')
  		return
@@ -111,14 +119,17 @@ const gerarId = () => {
  		id:gerarId(),
  		nome:descricao,
  		valor: Number(valor)
+
  	}
+
  	    transacoes.push(transacao)
  	    
  	document.querySelector('#descricao').value = ''
  	document.querySelector('#valorInput').value = ''
 
- 	localStorage.setItem('transacoes', JSON.stringify(transacoes))
+ 	
  	inicializar()
+ 	atualizarStorage()
 
  })
 
